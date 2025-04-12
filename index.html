@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+    <link rel="stylesheet" href="css/clearsky.css">
+    <title>SpazioTempo</title>
+</head>
+
+<body>
+    <!-- Mappa con pulsanti -->
+
+    <div class="map-container">
+        <div class="interactive-img-container">
+            <img class="map-image" src="imgs/mappa.jpg">
+        </div>
+        <div class="button-container">
+            <button id="cubo" class="js-modal-trigger" data-target="modal-js-cubo" tooltip="Viaggi cubici">
+                1
+            </button>
+        </div>
+        <div class="button-container">
+            <button id="liguria" class="js-modal-trigger" data-target="modal-js-liguria" tooltip="Cinematica ligure">
+                2
+            </button>
+        </div>
+        <div class="button-container">
+            <button id="soccorso" class="js-modal-trigger" data-target="modal-js-soccorso" tooltip="Soccorso in mare">
+                3
+            </button>
+        </div>
+        <div class="button-container">
+            <button id="cappelli" class="js-modal-trigger" data-target="modal-js-cappelli"
+                tooltip="Indovinello dei cappelli">
+                4
+            </button>
+        </div>
+        <div class="button-container">
+            <button id="scacchi" class="js-modal-trigger" data-target="modal-js-scacchi" tooltip="Scacchi matti">
+                5
+            </button>
+        </div>
+        <div class="button-container">
+            <button id="mucche" class="js-modal-trigger" data-target="modal-js-mucche" tooltip="Mucche saltellanti">
+                6
+            </button>
+        </div>
+        <div class="button-container">
+            <button id="tempo" class="js-modal-trigger" data-target="modal-js-tempo" tooltip="Magici viaggi nel tempo">
+                7
+            </button>
+        </div>
+        <div class="button-container">
+            <button id="fascia" class="js-modal-trigger" data-target="modal-js-fascia" tooltip="La fascia">
+                8
+            </button>
+        </div>
+        <div class="button-container">
+            <button id="bosco" class="js-modal-trigger" data-target="modal-js-bosco" tooltip="Il bosco incantato">
+                9
+            </button>
+        </div>
+        <div class="button-container">
+            <button id="orso" class="js-modal-trigger" data-target="modal-js-orso" tooltip="L'orso">
+                10
+            </button>
+        </div>
+        <div class="button-container">
+            <button id="radice" class="js-modal-trigger" data-target="modal-js-radice" tooltip="Radice di 3">
+                11
+            </button>
+        </div>
+        <div class="button-container">
+            <button id="strade" class="js-modal-trigger" data-target="modal-js-strade"
+                tooltip="Geometria a Geometropoli">
+                12
+            </button>
+        </div>
+        <div class="button-container">
+            <button id="alfabeto" class="js-modal-trigger" data-target="modal-js-alfabeto" tooltip="Distanza letterale">
+                13
+            </button>
+        </div>
+        <div class="button-container">
+            <button id="triangolo" class="js-modal-trigger" data-target="modal-js-triangolo"
+                tooltip="Un'acuta divisione">
+                14
+            </button>
+        </div>
+    </div>
+
+    <!-- VIAGGI CUBICI -->
+
+    <div id="modal-js-cubo" class="modal modal-fx-fadeInScale">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box">
+                <h1 class="title">Viaggi cubici</h1>
+                <div class="block">
+                    Due formichine sono su un cubo che ha lo spigolo lungo 10 cm. Le due formichine si trovano su due
+                    vertici opposti del cubo.
+                </div>
+                <div class="question">
+                    Qual è la distanza minima che deve percorrere una formichina per
+                    raggiungere l'altra?
+                </div>
+                <img src="imgs/quiz/cubo.jpg" class="centered" width="70%">
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <!-- CINEMATICA LIGURE -->
+
+    <div id="modal-js-liguria" class="modal modal-fx-fadeInScale">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box">
+                <h1 class="title">Cinematica ligure</h1>
+                <div class="block">
+                    Aurelia parte alle ore \(07\!:\!30\) da Savona e, mantenendo una velocità media di \(75 \textrm{
+                    km/h}\), raggiunge Genova, alle ore \(08\!:\!10\). Si dirige poi alla volta di Rapallo alla velocità
+                    media di \(60 \textrm{ km/h}\) e raggiunge la destinazione alle ore \(08\!:\!30\).
+                </div>
+                <div class="question">
+                    <span>
+                        Qual è la velocità media di Aurelia lungo il tragitto che da Savona conduce fino a Rapallo?
+                        <div class="grid">
+                            <div class="cell">
+                                <span><b>A.</b> \(42 \text{ km/h}\)</span>
+                            </div>
+                            <div class="cell">
+                                <span><b>B.</b> \(65 \text{ km/h}\)</span>
+                            </div>
+                            <div class="cell">
+                                <span><b>C.</b> \(67,\!5 \text{ km/h}\)</span>
+                            </div>
+                            <div class="cell">
+                                <span><b>D.</b> \(70 \text{ km/h}\)</span>
+                            </div>
+                            <div class="cell">
+                                <span><b>E.</b> \(135 \text{ km/h}\)</span>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <!-- SOCCORSO IN MARE-->
+
+    <div id="modal-js-soccorso" class="modal modal-fx-fadeInScale">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <section class="box">
+                <h1 class="title">Soccorso in mare</h1>
+                <section class="box-scroll">
+                    <div class="block">
+                        Il bagnino Nando è appostato sulla sua torretta quando avvista con il suo binocolo un bagnante
+                        in
+                        difficoltà. Rispetto al sistema di riferimento riportato in figura — dove l'asse \(x\) giace
+                        sulla
+                        linea della costa — il bagnante ha coordinate \((0, 20)\) e Nando ha coordinate \((100, -20)\).
+                        Nando riesce a correre alla velocità di \(4 \textrm{ m/s}\) e nuotare alla velocità di \(2
+                        \text{
+                        m/s}\).
+                        <img src="imgs/quiz/soccorso.jpg" class="centered" width="90%">
+                    </div>
+                    <div class="question">
+                        <span>
+                            In quale punto Nando si deve tuffare in mare per raggiungere il bagnante nel minor tempo
+                            possibile?
+                            <div class="grid">
+                                <div class="cell">
+                                    <span><b>A.</b> \((0, 0)\)</span>
+                                </div>
+                                <div class="cell">
+                                    <span><b>B.</b> \((20, 0)\)</span>
+                                </div>
+                                <div class="cell">
+                                    <span><b>C.</b> \((40, 0)\)</span>
+                                </div>
+                                <div class="cell">
+                                    <span><b>D.</b> \((50, 0)\)</span>
+                                </div>
+                                <div class="cell">
+                                    <span><b>E.</b> \((100, 0)\)</span>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="question">
+                        <span>
+                            Quanto tempo impiega al minimo Nando per raggiungere il bagnante?
+                        </span>
+                    </div>
+                </section>
+            </section>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <!-- INDOVINELLO DEI CAPPELLI -->
+
+    <div id="modal-js-cappelli" class="modal modal-fx-fadeInScale">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <section class="box">
+                <h1 class="title">Indovinello dei cappelli</h1>
+                <div class="block">
+                    Immaginate che ciascuna/o di voi abbia un cappello in testa. Ogni cappello può essere rosso o blu e
+                    c'è almeno un cappello rosso. Ciascuna/o di voi può vedere i cappelli altrui, ma non il proprio.
+                </div>
+                <div class="block">
+                    Dopo una fase iniziale, in cui potete accordarvi sulla strategia da seguire, il gioco avrà inizio e
+                    non potrete più parlarvi. Ogni 30 secondi dopo il “via”, al suono di un fischietto, ciascuna/o di
+                    voi sceglie se fare un passo avanti. Se a farlo sono tutte e sole le persone con il cappello rosso,
+                    avete vinto! Se almeno una persona con il cappello blu fa un passo avanti, avete perso. Se almeno
+                    una persona con il cappello rosso rimane ferma, il gioco continua.
+                </div>
+                <div class="question">
+                    Quale strategia vi permette di vincere entro 2 minuti?
+                </div>
+            </section>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <!-- SCACCHI MATTI -->
+
+    <div id="modal-js-scacchi" class="modal modal-fx-fadeInScale">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <section class="box">
+                <h1 class="title">Scacchi matti</h1>
+                <div class="block">
+                    Il cavallo si muove sulla scacchiera di due caselle nella direzione di una riga o di una colonna e
+                    di
+                    una casella in una direzione perpendicolare a quella precedente, disegnando una “L”. La regina si
+                    muove su una scacchiera di un numero qualsiasi di caselle nella direzione di una riga, di una
+                    colonna o di una diagonale; questo la rende il pezzo più potente.
+                </div>
+                <div class="block">
+                    Una circonferenza di raggio \(r\) attorno a un pezzo sulla scacchiera è formata dalle caselle che
+                    esso può raggiungere in \(r\) mosse, dove \(r\) è un numero naturale.
+                </div>
+                <div class="question">
+                    <span>
+                        Colorate sulla prima scacchiera la circonferenza di raggio \(2\) attorno al cavallo che si trova
+                        nella casella B2.
+                    </span>
+                </div>
+                <div class="question">
+                    <span>
+                        Colorate sulla seconda scacchiera la circonferenza di raggio \(2\) attorno alla regina che si
+                        trova
+                        nella casella B2.
+                    </span>
+                </div>
+            </section>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <!-- MUCCHE SALTELLANTI -->
+
+    <div id="modal-js-mucche" class="modal modal-fx-fadeInScale">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <section class="box">
+                <h1 class="title">Mucche saltellanti</h1>
+                <div class="block">
+                    Considerate la seguente ipotetica situazione. Tre mucche — una verde, una rossa e una blu — si
+                    trovano in prossimità di un filo di recinzione elettrificato. Ad un'estremità del filo si trova un
+                    contadino, mentre dall'altra il giovane Albert. Un impulso elettrico attraversa il filo alla
+                    velocità della luce, partendo dal contadino e diretto verso Albert. Quando le mucche sono raggiunte
+                    dall'impulso, saltano! Per semplicità, si supponga la velocità della luce pari a \(300 \, 000 \text{
+                    km/s}\) e si supponga che il contadino, le tre mucche e Albert siano equispaziati, alla distanza di
+                    \(300 \, 000 \textrm{ km}\) l'uno dell'altro, come illustrato in figura.
+                    <img src="imgs/quiz/mucche.jpg" class="centered" width="100%">
+                </div>
+                <div class="question">
+                    <span>
+                        In quale ordine il contadino vede saltare le tre mucche? In quale ordine le vede saltare il
+                        giovane Albert?
+                    </span>
+                </div>
+            </section>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <!-- MAGICI VIAGGI NEL TEMPO -->
+
+    <div id="modal-js-tempo" class="modal modal-fx-fadeInScale">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <section class="box">
+                <h1 class="title">Magici viaggi nel tempo</h1>
+                <div class="block">
+                    Hermione percorre un lungo corridoio rettilineo nel castello di Hogwarts alla velocità costante di
+                    \(1\) passo al secondo. Trascorsi \(10 \textrm{ s}\) dall'inizio della camminata Hermione inverte lo
+                    scorrere del tempo tramite un GiraTempo, un particolare congegno magico, e continua a camminare “in
+                    avanti” nello spazio ma “all'indietro” nel tempo.
+                </div>
+                <div class="question">
+                    <span>
+                        A quanti passi di distanza da se stessa la versione di Hermione che procede in avanti nel tempo
+                        vede la sua copia, che viaggia invece all'indietro nel tempo, dopo \(3 \textrm{ s}\) dall'inizio
+                        della camminata? Rispondi scrivendo in cifre il numero di passi.
+                    </span>
+                </div>
+            </section>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <!-- LA FASCIA -->
+
+    <div id="modal-js-fascia" class="modal modal-fx-fadeInScale">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <section class="box">
+                <h1 class="title">La fascia</h1>
+                <div class="block">
+                    Immaginate che la terra sia perfettamente sferica e che intorno all'equatore sia stata disposta una
+                    fascia aderente. La fascia viene allungata di un metro e sistemata in modo che ogni suo punto si
+                    trovi alla stessa altezza rispetto alla superficie terrestre.
+                </div>
+                <div class="question">
+                    <span>
+                        Indica quale dei seguenti animali riuscirebbe a strisciare sotto la fascia. Più di una risposta
+                        può essere corretta.
+                        <div class="grid is-col-min-4">
+                            <div class="cell">
+                                <span><b>A.</b> Una pulce</span>
+                            </div>
+                            <div class="cell">
+                                <span><b>B.</b> Un topolino</span>
+                            </div>
+                            <div class="cell">
+                                <span><b>C.</b> Un gatto</span>
+                            </div>
+                            <div class="cell">
+                                <span><b>D.</b> Una capra</span>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </section>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <!-- L'ORSO -->
+
+    <div id="modal-js-orso" class="modal modal-fx-fadeInScale">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <section class="box">
+                <h1 class="title">L'orso</h1>
+                <div class="block">
+                    Un orso, partendo dal punto \(P\), cammina per un chilometro verso sud. Poi cambia direzione e
+                    cammina per un chilometro verso est. Poi gira di nuovo a sinistra e cammina per un chilometro verso
+                    nord, e arriva esattamente al punto \(P\) da cui è partito.
+                </div>
+                <div class="question">
+                    <span>
+                        Di che colore è l'orso?
+                    </span>
+                </div>
+            </section>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <!-- IL BOSCO INCANTATO -->
+
+    <div id="modal-js-bosco" class="modal modal-fx-fadeInScale">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <section class="box">
+                <h1 class="title">Il bosco incantato</h1>
+                <div class="block">
+                    Un sentiero del bosco incantato cambia ogni giorno. Il primo giorno è un segmento lungo \(100 \text{
+                    m}\), il secondo giorno si divide in tre parti uguali il segmento e si sostituisce la parte centrale
+                    con due segmenti uguali (come due lati di un triangolo equilatero. Il giorno successivo si ripete
+                    questa procedura su tutti i segmenti, e così via…
+                </div>
+                <div class="question">
+                    <span>
+                        Un topolino percorre tutti i giorni il sentiero per andare a scuola. Se oggi è il primo giorno,
+                        e quindi percorre \(100 \text{ m}\), quanta strada percorrerà tra quattro giorni?
+                    </span>
+                </div>
+            </section>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <!-- RADICE DI 3 -->
+
+    <div id="modal-js-radice" class="modal modal-fx-fadeInScale">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <section class="box">
+                <h1 class="title">Radice di 3</h1>
+                <div class="block">
+                    Utilizza il foglio su cui è rappresentato un segmento di lunghezza \(1\).
+                </div>
+                <div class="question">
+                    <span>
+                        Disegna due punti che distano \(\sqrt{3}\).
+                    </span>
+                </div>
+            </section>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <!-- GEOMETRIA A GEOMETROPOLI -->
+
+    <div id="modal-js-strade" class="modal modal-fx-fadeInScale">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <section class="box">
+                <h1 class="title">Geometria a Geometropoli</h1>
+                <section class="box-scroll">
+                    <div class="block">
+                        A Geometropoli le strade sono tutte perpendicolari tra loro e suddividono la città in isolati
+                        quadrati, tutti identici tra loro, di lato \(100 \textrm{ m}\). Gli incroci sono identificati da
+                        un
+                        sistema di coordinate cartesiane, orientato come in figura.
+                        <img src="imgs/quiz/strade.jpg" class="centered" width="80%">
+                        Gli abitanti di Geometropoli misurano la distanza tra due incroci non in linea d'aria ma come lo
+                        spazio che bisogna percorrere per dirigersi da un incrocio all'altro spostandosi lungo il
+                        reticolo
+                        di strade della città.
+                    </div>
+                    <div class="block">
+                        I Geometropolitani, amanti della precisione e delle regole, hanno istallato in città tre
+                        semafori
+                        intelligenti, che multano automaticamente i veicoli che transitano con il rosso. Ogni semaforo è
+                        locato presso un incrocio ed è equidistante dagli altri due. Nella figura precedente ne sono
+                        rappresentati due, uno con coordinate \((2,2)\) e l'altro con coordinate \((8,4)\).
+                    </div>
+                    <div class="question">
+                        <span>
+                            Quanto distano i due semafori secondo i Geomotropolitani?
+                            <div class="grid">
+                                <div class="cell">
+                                    <span><b>A.</b> \(\sqrt{800} \text{ m}\)</span>
+                                </div>
+                                <div class="cell">
+                                    <span><b>B.</b> \(600 \text{ m}\)</span>
+                                </div>
+                                <div class="cell">
+                                    <span><b>C.</b> \(200\sqrt{10} \text{ m}\)</span>
+                                </div>
+                                <div class="cell">
+                                    <span><b>D.</b> \(700 \text{ m}\)</span>
+                                </div>
+                                <div class="cell">
+                                    <span><b>E.</b> \(800 \text{ m}\)</span>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="question">
+                        <span>
+                            Quali sono le coordinate del terzo semaforo? Scrivi il risultato nel formato \((x, y)\),
+                            separando le due coordinate con una virgola e uno spazio.
+                        </span>
+                    </div>
+                </section>
+            </section>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <!-- DISTANZA LETTERALE -->
+
+    <div id="modal-js-alfabeto" class="modal modal-fx-fadeInScale">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <section class="box">
+                <h1 class="title">Distanza letterale</h1>
+                <div class="block">
+                    Associamo un numero naturale a ogni lettera dell'alfabeto, in questo modo:
+                    \[
+                    A=1, \; B=2, \; C=3, \; \dotsc, \; Z=26 \, .
+                    \]
+                    La distanza tra due parole con lo stesso numero di lettere si ottiene sommando:
+                </div>
+                <div class="block custom-ol">
+                    <div class="custom-li" label="0.">
+                        <span>
+                            il valore assoluto della differenza tra le prime lettere di ciascuna parola;
+                        </span>
+                    </div>
+                    <div class="custom-li" label="1.">
+                        <span>
+                            il valore assoluto della differenza tra le seconde lettere di ciascuna parola, diviso per
+                            \(26\);
+                        </span>
+                    </div>
+                    <div class="custom-li" label="2.">
+                        <span>
+                            il valore assoluto della differenza tra le terze lettere di ciascuna parola, diviso per
+                            \(26^2\);
+                        </span>
+                    </div>
+                    <div class="custom-li" label="...">
+                    </div>
+                    <div class="custom-li" label="n.">
+                        <span>
+                            il valore assoluto della differenza tra le n-esime lettere di ciascuna parola, diviso per
+                            \(26^n\).
+                        </span>
+                    </div>
+                </div>
+                <div class="block">
+                    Per esempio, la distanza tra <em>LUOGO</em> e <em>TEMPO</em> è (circa):
+                    \[
+                    \begin{gathered}
+                    |L-T| + |U-E| : 26 + |O-M| : 26^2 + |G-P| : 26^3 + |O-O| : 26^4\\[.5em]
+                    = |10-18| + |19-5| : 2^6 + |13-11| : 26^2 + |7-14| : 26^3 + 0\\[.5em]
+                    = 8 + 4 : 26 + 2 : 676 + 7 : 17576 = 8,\!19.
+                    \end{gathered}
+                    \]
+                </div>
+                <div class="question">
+                    <span>
+                        Qual è la parola più vicina a <em>VENTO</em> tra <em>ACQUA</em>, <em>TERRA</em> e
+                        <em>FUOCO</em>?
+                    </span>
+                </div>
+            </section>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <!-- UN'ACUTA DIVISIONE -->
+
+    <div id="modal-js-triangolo" class="modal modal-fx-fadeInScale">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <section class="box">
+                <h1 class="title">Un'acuta divisione</h1>
+                <div class="block">
+                    Prendete il foglio su cui è rappresentato un triangolo ottusangolo.
+                </div>
+                <div class="question">
+                    <span>
+                        Dividete il triangolo in triangoli acutangoli.
+                    </span>
+                </div>
+            </section>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            loader: { load: ['[tex]/mathtools', '[tex]/newcommand'] },
+            tex: {
+                packages: { '[+]': ['mathtools', 'newcommand'] },
+                inlineMath: [['\\(', '\\)']],
+                tags: 'ams',
+            }
+        }
+    </script>
+    <script src="js/page-manager.js"></script>
+</body>
+
+</html>
